@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+}
+
+.sec_01 {
+    background-image: url(./images/wsg_01_bg.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 100px;
+}
+
+.sec_02 {
+    background-image: url(./images/sec_02_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn_bg01_bg,
+.btn_bg02_bg,
+.btn_bg03_bg,
+.btn_bg04_bg {
+    position: relative;
+}
+
+.btn_bg01,
+.btn_bg02,
+.btn_bg03,
+.btn_bg04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.inner01,
+.inner02 {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.inner02 {
+    box-shadow: 0px 0px 3px 4px rgba(68, 37, 31, 0.1);
+}
+
+.light {
+    line-height: 0;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.two_btn img {
+    width: 50%;
+    float: left;
+}
+
+.banner-mask {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.img img {
+    z-index: 1;
+}
+
+.img .btn_01 {
+    display: block;
+    position: absolute;
+    /* ↓閃光在一範圍內跑的寬與高↓ */
+    width: 86%;
+    height: 110%;
+    left: 7%;
+    /* ↑閃光在一範圍內跑的寬與高↑ */
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.img .btn_01:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 2000px;
+    /* ↓調整閃光上下位置↓ */
+    top: 5%;
+    /* ↑調整閃光上下位置↑ */
+    /* ↓閃光本身的寬與高↓ */
+    width: 88%;
+    height: 77%;
+    /* ↑閃光本身的寬與高↑ */
+    background: url(./images/light.png) no-repeat center;
+    background-size: 100%;
+    animation: btn 3.5s infinite ease-in-out;
+    /* ↓調整閃光透明度↓ */
+    opacity: 0.8;
+    /* ↑調整閃光透明度↑ */
+}
+
+.img .btn_02 {
+    display: block;
+    position: absolute;
+    /* ↓閃光在一範圍內跑的寬與高↓ */
+    width: 86%;
+    height: 110%;
+    left: 7%;
+    /* ↑閃光在一範圍內跑的寬與高↑ */
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.img .btn_02:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 2000px;
+    /* ↓調整閃光上下位置↓ */
+    top: 8%;
+    /* ↑調整閃光上下位置↑ */
+    /* ↓閃光本身的寬與高↓ */
+    width: 88%;
+    height: 77%;
+    /* ↑閃光本身的寬與高↑ */
+    background: url(./images/light.png) no-repeat center;
+    background-size: 100%;
+    animation: btn 3.5s infinite ease-in-out;
+    /* ↓調整閃光透明度↓ */
+    opacity: 0.8;
+    /* ↑調整閃光透明度↑ */
+}
+
+@keyframes btn {
+    0% {
+        left: -300%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes btn {
+    0% {
+        left: -300%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* 閃光特效結束 */
+
+.animate__pulse {
+    --animate-duration: 1.5s;
+}
+
+.nav {
+    width: 100%;
+    background-color: #5f3c33;
+    padding-bottom: 3px;
+    position: fixed;
+    z-index: 3;
+}
+
+ul {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    width: 33.3333%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 1.5vh;
+    border: 1px solid #ffffff;
+    margin-top: -1px;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 0px 0px 5px #44251f;
+}
+
+.gel li {
+    background-color: rgb(121, 71, 59)
+}
+
+.essence li {
+    background-color: #aa6e5a;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
